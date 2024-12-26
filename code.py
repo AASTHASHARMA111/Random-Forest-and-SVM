@@ -12,3 +12,7 @@ test_path = '/content/drive/MyDrive/ResoluteAI/Aastha Sharma Task 1/test.xlsx'
 
 train_df = pd.read_excel(train_path)
 test_df = pd.read_excel(test_path)
+
+# Encode the target variable in the training set
+label_encoder = LabelEncoder()
+train_df['target'] = label_encoder.fit_transform(train_df['target'])
