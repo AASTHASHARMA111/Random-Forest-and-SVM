@@ -16,3 +16,7 @@ test_df = pd.read_excel(test_path)
 # Encode the target variable in the training set
 label_encoder = LabelEncoder()
 train_df['target'] = label_encoder.fit_transform(train_df['target'])
+
+# Split the training data into features and target
+X = train_df.drop('target', axis=1)
+y = train_df['target']
