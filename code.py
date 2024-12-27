@@ -20,3 +20,6 @@ train_df['target'] = label_encoder.fit_transform(train_df['target'])
 # Split the training data into features and target
 X = train_df.drop('target', axis=1)
 y = train_df['target']
+
+# Ensure the test data has the same features as the training data
+X_test = test_df[X.columns]
