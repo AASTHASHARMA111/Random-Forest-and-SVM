@@ -23,3 +23,6 @@ y = train_df['target']
 
 # Ensure the test data has the same features as the training data
 X_test = test_df[X.columns]
+
+# Split the training data into training and validation sets
+X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
