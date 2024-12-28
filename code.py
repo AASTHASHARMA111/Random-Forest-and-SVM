@@ -30,3 +30,8 @@ X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_st
 # Initialize the models
 rf_model = RandomForestClassifier(random_state=42)
 svm_model = SVC(random_state=42)
+
+# Train the Random Forest model
+rf_model.fit(X_train, y_train)
+y_train_pred_rf = rf_model.predict(X_train)
+rf_train_accuracy = accuracy_score(y_train, y_train_pred_rf)
