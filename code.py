@@ -40,3 +40,10 @@ rf_train_accuracy = accuracy_score(y_train, y_train_pred_rf)
 svm_model.fit(X_train, y_train)
 y_train_pred_svm = svm_model.predict(X_train)
 svm_train_accuracy = accuracy_score(y_train, y_train_pred_svm)
+
+# Evaluate on the validation set
+y_val_pred_rf = rf_model.predict(X_val)
+rf_val_accuracy = accuracy_score(y_val, y_val_pred_rf)
+
+y_val_pred_svm = svm_model.predict(X_val)
+svm_val_accuracy = accuracy_score(y_val, y_val_pred_svm)
