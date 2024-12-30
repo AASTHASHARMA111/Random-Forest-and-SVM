@@ -35,3 +35,8 @@ svm_model = SVC(random_state=42)
 rf_model.fit(X_train, y_train)
 y_train_pred_rf = rf_model.predict(X_train)
 rf_train_accuracy = accuracy_score(y_train, y_train_pred_rf)
+
+# Train the SVM model
+svm_model.fit(X_train, y_train)
+y_train_pred_svm = svm_model.predict(X_train)
+svm_train_accuracy = accuracy_score(y_train, y_train_pred_svm)
