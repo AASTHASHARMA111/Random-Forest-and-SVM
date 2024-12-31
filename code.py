@@ -51,3 +51,7 @@ svm_val_accuracy = accuracy_score(y_val, y_val_pred_svm)
 # Predict on the test dataset
 test_predictions_rf = rf_model.predict(X_test)
 test_predictions_svm = svm_model.predict(X_test)
+
+# Decode the predicted target values for the test set
+test_predictions_rf = label_encoder.inverse_transform(test_predictions_rf)
+test_predictions_svm = label_encoder.inverse_transform(test_predictions_svm)
