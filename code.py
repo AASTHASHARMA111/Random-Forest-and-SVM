@@ -66,3 +66,6 @@ print(f"SVM Validation Accuracy: {svm_val_accuracy}")
 # Display predictions
 print("Random Forest Predictions for Test Set:")
 print(test_predictions_rf)
+
+print("SVM Predictions for Test Set:")
+print(test_predictions_svm)
