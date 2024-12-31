@@ -62,3 +62,7 @@ print(f"Random Forest Validation Accuracy: {rf_val_accuracy}")
 
 print(f"SVM Training Accuracy: {svm_train_accuracy}")
 print(f"SVM Validation Accuracy: {svm_val_accuracy}")
+
+# Display predictions
+print("Random Forest Predictions for Test Set:")
+print(test_predictions_rf)
