@@ -55,3 +55,10 @@ test_predictions_svm = svm_model.predict(X_test)
 # Decode the predicted target values for the test set
 test_predictions_rf = label_encoder.inverse_transform(test_predictions_rf)
 test_predictions_svm = label_encoder.inverse_transform(test_predictions_svm)
+
+# Display the accuracies
+print(f"Random Forest Training Accuracy: {rf_train_accuracy}")
+print(f"Random Forest Validation Accuracy: {rf_val_accuracy}")
+
+print(f"SVM Training Accuracy: {svm_train_accuracy}")
+print(f"SVM Validation Accuracy: {svm_val_accuracy}")
