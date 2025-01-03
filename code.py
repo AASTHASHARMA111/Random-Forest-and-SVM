@@ -69,3 +69,8 @@ print(test_predictions_rf)
 
 print("SVM Predictions for Test Set:")
 print(test_predictions_svm)
+
+# Confusion Matrix for Random Forest
+cm_rf = confusion_matrix(y_val, y_val_pred_rf)
+disp_rf = ConfusionMatrixDisplay(confusion_matrix=cm_rf, display_labels=label_encoder.classes_)
+disp_rf.plot(cmap=plt.cm.Blues)
