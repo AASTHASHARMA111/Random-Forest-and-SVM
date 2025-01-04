@@ -83,3 +83,5 @@ disp_svm = ConfusionMatrixDisplay(confusion_matrix=cm_svm, display_labels=label_
 disp_svm.plot(cmap=plt.cm.Blues)
 plt.title('SVM Confusion Matrix')
 plt.show()
+
+#end
