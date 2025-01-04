@@ -76,3 +76,5 @@ disp_rf = ConfusionMatrixDisplay(confusion_matrix=cm_rf, display_labels=label_en
 disp_rf.plot(cmap=plt.cm.Blues)
 plt.title('Random Forest Confusion Matrix')
 plt.show()
+
+# Confusion Matrix for SVM
