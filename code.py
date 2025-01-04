@@ -78,3 +78,5 @@ plt.title('Random Forest Confusion Matrix')
 plt.show()
 
 # Confusion Matrix for SVM
+cm_svm = confusion_matrix(y_val, y_val_pred_svm)
+disp_svm = ConfusionMatrixDisplay(confusion_matrix=cm_svm, display_labels=label_encoder.classes_)
